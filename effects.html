@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueLife PH - Effects of Water Pollution</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f5fbff;
+            color: #00395d;
+        }
+
+        /* NAVBAR */
+        header {
+            width: 100%;
+            background: #0a87c9;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h2 {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* PAGE TITLE */
+        .page-title {
+            text-align: center;
+            padding: 50px 20px 10px;
+        }
+
+        .page-title h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            font-size: 18px;
+            opacity: 0.7;
+        }
+
+        /* EFFECT CARDS */
+        .effects-container {
+            padding: 40px 80px 80px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .effect-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .effect-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .effect-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .effect-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .effect-card p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #00395d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <h2>BlueLife PH</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="effects.html">Effects</a>
+            <a href="ways.html">Ways to Help</a>
+            <a href="tips.html">Tips</a>
+        </nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-title">
+        <h1>Effects of Water Pollution</h1>
+        <p>Learn how polluted water impacts humans, animals, and the environment.</p>
+    </section>
+
+    <!-- EFFECT CARDS -->
+    <section class="effects-container">
+
+        <!-- CARD 1 -->
+        <div class="effect-card">
+            <img src="marinelife.jpg" alt="Marine Life Harm">
+            <h3>Harm to Marine Life</h3>
+            <p>
+                Toxic chemicals, plastic waste, and oil spills severely damage marine animals. Fish,
+                turtles, and coral reefs suffer, leading to loss of biodiversity and disrupted ecosystems.
+            </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="effect-card">
+            <img src="humanhealth.jpg" alt="Human Health">
+            <h3>Health Problems for Humans</h3>
+            <p>
+                Polluted water can cause diseases such as diarrhea, cholera, and skin infections.
+                Communities without access to clean water face higher health risks every day.
+            </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="effect-card">
+            <img src="ecosystemdamage.jpg" alt="Ecosystem Damage">
+            <h3>Damage to Ecosystems</h3>
+            <p>
+                Lakes and rivers lose their natural balance when polluted. Plants die,
+                animals migrate, and important habitats are destroyed, affecting the entire food chain.
+            </p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="effect-card">
+            <img src="economic.jpg" alt="Economic Impact">
+            <h3>Economic Impact</h3>
+            <p>
+                Pollution harms fishing industries and tourism, leading to financial loss for
+                communities who rely on water resources for livelihood and income.
+            </p>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="effect-card">
+            <img src="Watershortage.jpg" alt="Water Shortage">
+            <h3>Water Shortage</h3>
+            <p>
+                As more water becomes polluted, less clean water is available for drinking, farming,
+                and daily use. This leads to water scarcity, especially in developing communities.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 BlueLife PH — All Rights Reserved
+    </footer>
+
+</body>
+</html>

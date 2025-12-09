@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueLife PH - Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f5fbff;
+            color: #00395d;
+        }
+
+        /* NAVIGATION BAR */
+        header {
+            width: 100%;
+            background: #0a87c9;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h2 {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            width: 100%;
+            height: 75vh;
+            background: url('picture1.png') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 60px;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            max-width: 550px;
+        }
+
+        .hero p {
+            margin: 15px 0 25px;
+            font-size: 20px;
+            max-width: 450px;
+        }
+
+        .hero-buttons a {
+            text-decoration: none;
+            background: white;
+            padding: 12px 25px;
+            margin-right: 15px;
+            border-radius: 30px;
+            font-weight: 600;
+            color: #0a87c9;
+            transition: 0.3s;
+        }
+
+        .hero-buttons a:hover {
+            background: #dff4ff;
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 80px;
+            gap: 40px;
+        }
+
+        .about-text {
+            width: 50%;
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        /* VIDEO VIDEO AREA */
+.video {
+    width: 45%;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    position: relative;
+    display: flex; /* Added */
+    align-items: center; /* Added */
+    justify-content: center; /* Added */
+}
+
+@media (max-width: 900px) {
+    .video { 
+        width: 100%; 
+        height: auto; /* Modified */
+    }
+}
+
+.video iframe {
+    width: 100%; /* Added */
+    height: 100%; /* Added */
+    position: absolute; /* Added */
+    top: 0;           /* Added */
+    left: 0;          /* Added */
+}
+        /* HIGHLIGHT CARDS */
+        .highlights {
+            padding: 60px 80px;
+            text-align: center;
+        }
+
+        .highlights h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            margin: 10px 0 20px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .card a {
+            text-decoration: none;
+            display: inline-block;
+            background: #0a87c9;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .card a:hover {
+            background: #086ca0;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #00395d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <h2>BlueLife PH</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="effects.html">Effects</a>
+            <a href="ways.html">Ways to Help</a>
+            <a href="tips.html">Tips</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Protect Our Water. Protect Our Future.</h1>
+        <p>BlueLife PH promotes water conservation and environmental care for a healthier future.</p>
+
+        <div class="hero-buttons">
+            <a href="effects.html">Explore Effects</a>
+            <a href="ways.html">Ways to Help</a>
+            <a href="tips.html">Tips</a>
+        </div>
+    </section>
+
+   <section class="about">
+    <div class="about-text">
+        <h2>About BlueLife PH</h2>
+        <p>
+            BlueLife PH is an educational website that raises awareness about water conservation 
+            and the importance of protecting oceans, rivers, and lakes. Our mission is to teach 
+            communities and students how to reduce pollution and save water through simple actions 
+            and sustainable habits.
+        </p>
+    </div>
+
+     <!-- LOCAL VIDEO FILE -->
+    <div class="video">
+        <video controls autoplay muted loop>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+  
+</section>
+
+
+    <!-- FEATURED SECTIONS -->
+<section class="highlights">
+    <h2>Featured Sections</h2>
+    <p style="margin-bottom: 35px; font-size: 18px; color:#00395d;">
+        Discover important topics and updates from BlueLife PH.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://img.icons8.com/fluency/96/book.png" alt="">
+            <h3>Did You Know?</h3>
+            <p>Explore surprising facts about water, pollution, and the environment.</p>
+            <a href="facts.html">Learn More</a>
+        </div>
+
+        <div class="card">
+            <img src="https://img.icons8.com/fluency/96/goal.png" alt="">
+            <h3>Goals</h3>
+            <p>See BlueLife PH’s mission, vision, and connection to SDG 6.</p>
+            <a href="goals.html">View Goals</a>
+        </div>
+
+        <div class="card">
+            <img src="https://img.icons8.com/fluency/96/prize.png" alt="">
+            <h3>Our Impact</h3>
+            <p>Discover community achievements and environmental activities.</p>
+            <a href="impact.html">See Impact</a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 BlueLife PH — All Rights Reserved
+    </footer>
+
+</body>
+</html>

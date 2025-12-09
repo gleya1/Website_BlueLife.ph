@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tips – BlueLife PH</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4fbff;
+    }
+
+    /* NAVIGATION */
+    header {
+      background: #0a87c9;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header a:hover {
+      opacity: 0.8;
+    }
+
+    /* HERO */
+    .hero {
+      background: url('images/picture1.png');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 40px;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    /* TIPS */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 25px;
+    }
+    .tip-card {
+      background: white;
+      padding: 25px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .tip-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .tip-card button {
+      background: #0a87c9;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .tip-card button:hover {
+      opacity: 0.85;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(3px);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 450px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    }
+    .close {
+      background: #0a87c9;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0a87c9;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <h2>BlueLife PH</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="effects.html">Effects</a>
+    <a href="ways.html">Ways to Help</a>
+    <a href="tips.html">Tips</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Helpful Tips for Water Conservation</h1>
+  <p>Simple and easy water-saving tips you can do daily to protect our environment.</p>
+</section>
+
+<!-- TIPS GRID -->
+<div class="container">
+  <div class="tips-grid">
+
+    <div class="tip-card">
+      <h3>Tip 1</h3>
+      <p>Turn off the faucet when not in use.</p>
+      <button onclick="openModal('modal1')">View Tip</button>
+    </div>
+
+    <div class="tip-card">
+      <h3>Tip 2</h3>
+      <p>Reuse water whenever possible.</p>
+      <button onclick="openModal('modal2')">View Tip</button>
+    </div>
+
+    <div class="tip-card">
+      <h3>Tip 3</h3>
+      <p>Report leaks in your home.</p>
+      <button onclick="openModal('modal3')">View Tip</button>
+    </div>
+
+    <div class="tip-card">
+      <h3>Tip 4</h3>
+      <p>Use a pail instead of a shower.</p>
+      <button onclick="openModal('modal4')">View Tip</button>
+    </div>
+
+    <div class="tip-card">
+      <h3>Tip 5</h3>
+      <p>Avoid throwing oil into drains.</p>
+      <button onclick="openModal('modal5')">View Tip</button>
+    </div>
+
+    <div class="tip-card">
+      <h3>Tip 6</h3>
+      <p>Encourage your family to conserve.</p>
+      <button onclick="openModal('modal6')">View Tip</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- MODALS -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h2>Turn Off the Faucet</h2>
+    <p>Always turn off the faucet when brushing teeth, scrubbing dishes, or washing hands.</p>
+    <button class="close" onclick="closeModal('modal1')">Close</button>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <h2>Reuse Water</h2>
+    <p>Use leftover rinsing water for plants, cleaning floors, or flushing the toilet.</p>
+    <button class="close" onclick="closeModal('modal2')">Close</button>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <h2>Fix Leaks</h2>
+    <p>Small leaks waste thousands of liters monthly. Report and repair leaks immediately.</p>
+    <button class="close" onclick="closeModal('modal3')">Close</button>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <h2>Use a Pail When Bathing</h2>
+    <p>You can save up to 40% more water by using a dipper and pail instead of a long shower.</p>
+    <button class="close" onclick="closeModal('modal4')">Close</button>
+  </div>
+</div>
+
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <h2>Dispose of Oil Properly</h2>
+    <p>Never pour cooking oil down sinks; it blocks pipes and pollutes water systems.</p>
+    <button class="close" onclick="closeModal('modal5')">Close</button>
+  </div>
+</div>
+
+<div id="modal6" class="modal">
+  <div class="modal-content">
+    <h2>Encourage the Family</h2>
+    <p>Water conservation starts at home. Teach kids simple habits that make a big difference.</p>
+    <button class="close" onclick="closeModal('modal6')">Close</button>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+function openModal(id) {
+  document.getElementById(id).style.display = "flex";
+}
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+</script>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 BlueLife PH — Protecting Water, Protecting Life.
+</footer>
+
+</body>
+</html>

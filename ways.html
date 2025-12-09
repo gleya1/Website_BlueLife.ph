@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueLife PH - Ways to Help</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f4fbff;
+            color: #00395d;
+        }
+
+        /* NAVBAR */
+        header {
+            width: 100%;
+            background: #0a87c9;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h2 {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* PAGE TITLE */
+        .page-title {
+            text-align: center;
+            padding: 50px 20px 10px;
+        }
+
+        .page-title h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            font-size: 18px;
+            opacity: 0.7;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 40px 80px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* COMMUNITY GALLERY */
+        .community-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .community-gallery img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .community-gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #00395d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <h2>BlueLife PH</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="effects.html">Effects</a>
+            <a href="ways.html">Ways to Help</a>
+            <a href="tips.html">Tips</a>
+        </nav>
+    </header>
+
+   
+    <section class="page-title">
+        <h1>Ways You Can Help</h1>
+        <p>Small actions create big change. Here are simple ways to protect our water resources.</p>
+    </section>
+
+
+    <section class="section">
+        <h2>💧 Everyday Water-Saving Actions</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Turn Off the Tap</h3>
+                <p>Save liters of water by turning off the faucet while brushing your teeth or washing dishes.</p>
+            </div>
+
+            <div class="card">
+                <h3>Shorter Showers</h3>
+                <p>Limit showers to 5 minutes to reduce water use and save energy.</p>
+            </div>
+
+            <div class="card">
+                <h3>Fix Leaks</h3>
+                <p>Repair dripping faucets and pipes to prevent water waste in your home.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>🌿 Eco-Friendly Habits</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Reduce Plastic Use</h3>
+                <p>Choose reusable bags, bottles, and containers to decrease plastic pollution.</p>
+            </div>
+
+            <div class="card">
+                <h3>Recycle Properly</h3>
+                <p>Segregate waste and recycle plastics, paper, and cans instead of throwing them away.</p>
+            </div>
+
+            <div class="card">
+                <h3>Choose Eco-Products</h3>
+                <p>Use biodegradable soaps and detergents to reduce harmful chemicals in water.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section">
+        <h2>🤝 Community Actions</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Join Clean-Up Drives</h3>
+                <p>Participate in local coastal or river clean-ups to directly help the environment.</p>
+            </div>
+
+            <div class="card">
+                <h3>Plant Trees</h3>
+                <p>Trees prevent soil erosion and help clean polluted water entering rivers and lakes.</p>
+            </div>
+
+            <div class="card">
+                <h3>Raise Awareness</h3>
+                <p>Educate your school and community about the importance of clean water.</p>
+            </div>
+
+        </div>
+
+        <div class="community-gallery">
+            <img src="cleaning.jpg" alt="">
+            <img src="planting.jpg" alt="">
+            <img src="awareness.jpg" alt="">
+        </div>
+
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        © 2025 BlueLife PH — All Rights Reserved
+    </footer>
+
+</body>
+</html>

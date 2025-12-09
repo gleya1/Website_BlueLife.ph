@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueLife PH - Did You Know?</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f5fbff;
+            color: #00395d;
+        }
+
+        /* NAVBAR */
+        header {
+            width: 100%;
+            background: #0a87c9;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        /* HEADER TITLE */
+        .page-title {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .facts-container {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .fact-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .fact-card img {
+            width: 70px;
+            margin-bottom: 10px;
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px;
+            text-align: center;
+            background: #0a87c9;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #006fa3;
+        }
+
+        footer {
+            background: #00395d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>BlueLife PH</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="effects.html">Effects</a>
+        <a href="ways.html">Ways to Help</a>
+        <a href="tips.html">Tips</a>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Did You Know?</h1>
+    <p>Interesting facts about water, pollution, and the environment.</p>
+</section>
+
+<section class="facts-container">
+
+    <div class="fact-card">
+        <img src="https://img.icons8.com/fluency/96/water-planet.png" alt="">
+        <h3>Only 1% of Earth’s Water is Drinkable</h3>
+        <p>Despite covering 70% of Earth, most water is saltwater or frozen.</p>
+    </div>
+
+    <div class="fact-card">
+        <img src="https://img.icons8.com/fluency/96/plastic.png" alt="">
+        <h3>Plastic Lasts 450+ Years</h3>
+        <p>Plastic thrown into oceans can take centuries to break down.</p>
+    </div>
+
+    <div class="fact-card">
+        <img src="https://img.icons8.com/fluency/96/ocean.png" alt="">
+        <h3>Oceans Produce 50% of Oxygen</h3>
+        <p>Healthy oceans help us breathe—but pollution is destroying them.</p>
+    </div>
+
+</section>
+
+<!-- ✅ BACK BUTTON -->
+<button class="back-btn" onclick="history.back()">⬅ Go Back</button>
+
+<footer>
+    © 2025 BlueLife PH — All Rights Reserved
+</footer>
+
+</body>
+</html>
